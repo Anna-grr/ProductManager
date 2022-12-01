@@ -33,7 +33,7 @@ public class ManagerTest {
     @Test
     public void RemoveByIdWhenOneProduct() {
         manager.add(book1);
-        manager.removeById(1);
+        manager.remove(1);
         Product[] expected = {};
         Product[] actual = manager.findAll();
 
@@ -47,7 +47,7 @@ public class ManagerTest {
         manager.add(book2);
         manager.add(smartphone2);
 
-        manager.removeById(3);
+        manager.remove(3);
 
         Product[] expected = {book1, smartphone1, smartphone2};
         Product[] actual = manager.findAll();
