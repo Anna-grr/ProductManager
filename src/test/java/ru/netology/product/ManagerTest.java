@@ -78,7 +78,7 @@ public class ManagerTest {
         manager.add(book3);
         manager.add(smartphone2);
 
-        manager.searchBy("Samsung");
+        manager.searchBy("iPhone");
 
         Product[] expected = {smartphone2};
         Product[] actual = manager.searchBy("iPhone");
